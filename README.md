@@ -38,3 +38,12 @@ cd fullstack-product-vapebay
 ```
 ###  Run setiap folder
 Open folder digithub web untuk liat caranya
+
+### Buat database vapebay_test
+schema public
+lalu import table-table nya
+sesuiakan di beckend-api/src/app.module.ts
+sesuikan juga di admin-app/.env
+
+Terimakasih
+
