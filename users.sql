@@ -1,0 +1,1 @@
+INSERT INTO "users" ("id", "name", "email", "email_verified_at", "password", "remember_token", "created_at", "updated_at") VALUES (1, 'adminvape', 'adminvape@gmail.com', NULL, '$2y$12$a7/tOIOthHrdjQsBG14z8.ydZsf0seJRkCGsvfngd5BMsLCVc1l1O', 'TRRvjiaKcLIsWV0To1rrUkLZoa6Xflpa0OIeJtnkDNjiDw1GtFTSZbNeky7Q', '2025-07-01 16:29:25', '2025-07-01 16:29:25');
