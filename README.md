@@ -33,5 +33,5 @@ Pastikan Anda telah menginstal perangkat lunak berikut di sistem Anda:
 
 ### 1. Kloning Repositori
 ```bash
-git clone [https://github.com/NAMA_USER_ANDA/fullstack-product-test.git](https://github.com/NAMA_USER_ANDA/fullstack-product-test.git)
+git clone [https://github.com/refiahmadfauzi/Fullstack-product-vapebay.git](https://github.com/refiahmadfauzi/Fullstack-product-vapebay.git)
 cd fullstack-product-test
