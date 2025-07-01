@@ -1,0 +1,47 @@
+stages:
+  - build
+  - deploy
+
+build_frontend:
+  stage: build
+  image: node:18
+  script:
+    - cd frontend-app
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - frontend-app/.output/
+
+build_backend_api:
+  stage: build
+  image: node:18
+  script:
+    - cd backend-api
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - backend-api/dist/
+
+build_admin_app:
+  stage: build
+  image: composer:latest
+  script:
+    - cd admin-app
+    - composer install --no-dev --optimize-autoloader
+  artifacts:
+    paths:
+      - admin-app/vendor/
+      - admin-app/public/
+
+# Contoh Job Deployment (langkah sebenarnya tidak diimplementasikan)
+deploy_to_digital_ocean:
+  stage: deploy
+  image: ubuntu:latest
+  script:
+    - echo "Mendeskripsikan langkah-langkah deployment..."
+    - apt-get update -y && apt-get install -y openssh-client
+    - ssh user@your_digital_ocean_ip "cd /path/to/app && ./deploy.sh"
+  rules:
+    - if: $CI_COMMIT_BRANCH == 'main'
