@@ -45,5 +45,10 @@ lalu import table-table nya
 sesuiakan di beckend-api/src/app.module.ts
 sesuikan juga di admin-app/.env
 
+Akun Login Admin
+email: adminvape@gmail.com
+password: nimda123
+
+
 Terimakasih
 
